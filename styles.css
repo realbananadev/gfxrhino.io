@@ -1,0 +1,329 @@
+/* Reset styles */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%; /* Ensure full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Body styling */
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('assets/background.jpg'); /* Updated path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+/* Centered content */
+.center-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Title Styling */
+.center-content h1 {
+  font-size: 158px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif; /* Modern and clean font */
+  text-shadow: 0 0 20px #636363, 0 0 40px #636363; /* Brighter neon glow */
+  color: #ffffff; /* Pinkish neon color */
+  margin-bottom: 20px; /* Space between title and video */
+}
+
+
+/* Center Content Buttons */
+.main-buttons {
+  margin-top: 30px; /* Increased spacing between buttons and video */
+  display: flex;
+  gap: 15px; /* Space between buttons */
+  justify-content: center; /* Center-align buttons */
+}
+
+/* Button Styles (Blue Theme) */
+.btn-see-products, .btn-yt {
+  padding: 10px 25px;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 15px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Optional spacing for icons */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-see-products:hover, .btn-yt:hover {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.05);
+}
+
+.btn-yt {
+  background-color: #0056b3; /* Slightly darker blue for initial color */
+}
+
+/* Video Section */
+.video-section {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0; /* Add spacing between video and content */
+}
+
+.video-section iframe {
+  width: 80%;
+  max-width: 800px;
+  height: 450px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 20px; /* Space between the title and video */
+}
+
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e1e;
+  padding: 10px 15px;
+  border-radius: 30px;
+  margin: 20px auto;
+  max-width: 600px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Neon outline effect */
+.navbar:before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 31px;
+  background: linear-gradient(90deg, #007bff, #9d00ff);
+  background-size: 300%;
+  z-index: -1;
+  animation: neonOutline 6s infinite linear;
+}
+
+/* Keyframe animation for the outline */
+@keyframes neonOutline {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 300%;
+  }
+}
+
+/* Logo styling */
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: red;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  margin-left: 10px;
+}
+
+.btn {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 15px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: red;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Video Section */
+.video-section {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.video-section iframe {
+  width: 80%;
+  max-width: 800px;
+  height: 450px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer container */
+.footer {
+  background-color: transparent;
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Footer bottom section (Copyright and Links) */
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-bottom a {
+  color: #00d4ff;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+/* Discord Section Styling */
+.discord-section {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(30, 30, 30, 0.9); /* Semi-transparent background */
+  border-radius: 15px;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+/* Title */
+.discord-section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color: #00d4ff;
+  text-shadow: 0 0 10px #007bff, 0 0 20px #00d4ff;
+  margin-bottom: 10px;
+}
+
+/* Description */
+.discord-description {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Dropdown Styling */
+.dropdown {
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown li {
+  margin: 10px 0;
+}
+
+.dropdown-btn {
+  background: #333;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dropdown-btn:hover {
+  background: #444;
+}
+
+.dropdown-content {
+  margin-top: 5px;
+  padding: 10px;
+  background: #222;
+  border-radius: 10px;
+  display: none; /* Hidden by default */
+  color: white;
+  font-size: 14px;
+}
+
+/* Expand Dropdown Content */
+.dropdown-btn.active + .dropdown-content {
+  display: block; /* Show content when active */
+}
+
+/* Discord Button */
+.btn-discord {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background: #5865F2; /* Discord blue color */
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-discord:hover {
+  background: #4752C4;
+  transform: scale(1.05);
+}
+
+
+/* Button style for "Go Back to Home" */
+.btn-go-back {
+  background-color: #007BFF;  /* Blue color */
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.btn-go-back:hover {
+  background-color: #0056b3;  /* Darker blue on hover */
+}
