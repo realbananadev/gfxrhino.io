@@ -10,8 +10,7 @@ html, body {
   flex-direction: column;
 }
 
-/* Body styling */
-/* Body styling */
+
 body {
   font-family: Arial, sans-serif;
   background-image: url('assets/background.jpg'); /* Updated path */
@@ -327,3 +326,66 @@ body {
 .btn-go-back:hover {
   background-color: #0056b3;  /* Darker blue on hover */
 }
+/* Centering the License Content */
+.license-content {
+  width: 80%;               /* Adjust the width as necessary */
+  margin: 0 auto;           /* Center horizontally */
+  padding: 20px;            /* Add padding around the content */
+  text-align: left;         /* Align text to the left for readability */
+  background-color: #f9f9f9; /* Optional: background color */
+  border-radius: 10px;      /* Optional: rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  background-color: #fafafa;
+}
+
+footer {
+  margin-top: 40px; /* Space for the footer */
+}
+
+/* Optional: Style for the navbar to ensure good visual hierarchy */
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.buttons .btn {
+  padding: 10px 20px;
+  background-color: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+footer .footer-bottom {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
